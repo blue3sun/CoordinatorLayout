@@ -1,5 +1,6 @@
 package com.monkey.coordinatorlayout;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.CoordinatorLayout;
@@ -37,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
     private void initView() {
         mCoordinatorLayout = (CoordinatorLayout)findViewById(R.id.coordinator_layout);
         mCollapsingToolbarLayout = (CollapsingToolbarLayout)findViewById(R.id.collapsing_toolbar_layout);
+        mCollapsingToolbarLayout.setCollapsedTitleTextColor(Color.rgb(255,0,0));//收缩至最小是title的颜色
+        mCollapsingToolbarLayout.setExpandedTitleColor(Color.rgb(0,0,255));//完全显示时title的颜色
         mToolBar = (Toolbar)findViewById(R.id.toolbar);
         mFloatingActinonBar = (FloatingActionButton)findViewById(R.id.floating_action_button);
         mFloatingActinonBar.setOnClickListener(new View.OnClickListener() {
