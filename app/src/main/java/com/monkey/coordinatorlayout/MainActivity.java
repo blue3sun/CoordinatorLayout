@@ -35,9 +35,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        mCollapsingToolbarLayout = (CollapsingToolbarLayout)findViewById(R.id.collapsing_toolbar_layout);
         mCoordinatorLayout = (CoordinatorLayout)findViewById(R.id.coordinator_layout);
-        mCollapsingToolbarLayout.setTitle("CollapsingToolbarLayout");
+        mCollapsingToolbarLayout = (CollapsingToolbarLayout)findViewById(R.id.collapsing_toolbar_layout);
         mToolBar = (Toolbar)findViewById(R.id.toolbar);
         mFloatingActinonBar = (FloatingActionButton)findViewById(R.id.floating_action_button);
         mFloatingActinonBar.setOnClickListener(new View.OnClickListener() {
